@@ -27,7 +27,8 @@ header h1 {
 	margin: 0;
 	color: white;
 	font-size: 2.5em;
-	font-weight: thin;
+	font-weight: lighter;
+	letter-spacing: 6px;
 	line-height: 1;
 
 }
@@ -64,6 +65,7 @@ hr {
 	border-left: solid 15px #666666;
 	top: 35px;
 	box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+	cursor: default;
 
 }
 
@@ -94,7 +96,7 @@ nav li {
 	text-align: center;
 	padding: 40px 10px;
 	line-height: 20px;
-	border-right: rgba(0,0,0,0.05) 2px solid;
+	border-right: rgba(0,0,0,0.05) 1px solid;
 	color: grey;
 	display: block;
 	text-align: center;
@@ -104,7 +106,7 @@ nav li {
 
 nav ul li:hover{
 	transition: 0.5s;
-	background-color: rgba(74,170,165,0.4);
+	background-color: rgba(74,170,165,0.7);
 	color: rgba(0,0,0,0.6);
 
 }
@@ -121,7 +123,7 @@ nav ul li:hover{
 }
 
 body > header > div > nav > ul > li:nth-child(1) {
-	border-left: rgba(0,0,0,0.05) 2px solid;
+	border-left: rgba(0,0,0,0.05) 1px solid;
 
 }
 
@@ -149,6 +151,7 @@ body > header > div > nav > ul > li:nth-child(1) {
 	margin: 12px;
 	margin-left: 0;
 	border-radius: 2%;
+	border-bottom: solid 6px #4aaaa5;
 }
 
 .sidebar {
