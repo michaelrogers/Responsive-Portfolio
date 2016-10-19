@@ -311,6 +311,21 @@ textarea:focus {
  	position: relative;
  	width: auto;
  }
+.imageWrapper:after {
+ 	content:"";
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+	transition: 0.5s;
+}
+
+.imageWrapper:hover:after {
+	background-color: transparent;
+	transition: 0.5s;
+}
  .imageTextBlock {
  	float: left;
  	top: 70%;
