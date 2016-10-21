@@ -118,6 +118,12 @@ nav ul li:hover{
 	background-color: none;
 	transition: 0.5s;
 }
+
+nav ul li:active {
+	/*transition: 0.7s;*/
+	background-color: rgba(0,0,0,0.4);
+}
+
 .navLinkText {
 	border-bottom: 4px solid white;
 	
@@ -136,9 +142,8 @@ body > header > div > nav > ul > li:nth-child(1) {
 	margin: 0 auto;
 	margin-top: 40px;
 	flex: 1;
-	
-
 }
+
 .mainSectionContent {
 	width: 590px;
 	float: left;
@@ -199,8 +204,8 @@ body > header > div > nav > ul > li:nth-child(1) {
 .socialIconsContainer:hover:after {
 	background-color: rgba(74,170,165,0.7);
 	transition: 0.5s;
-
 }
+
 .footer {
 	clear: both;
 	width: 100%;
@@ -300,7 +305,7 @@ textarea:focus {
 */}
 .portfolio img {
  	filter: grayscale(80%);
- 	width: 250px;
+ 	width: 275px;
  	height: auto;
  	border-radius: 0;
  	transition: 0.5s;
@@ -313,7 +318,7 @@ textarea:focus {
  .imageWrapper {
  	float: left;
  	display: inline-block;
- 	margin: 20px;
+ 	margin: 10px;
  	position: relative;
  	width: auto;
  }
