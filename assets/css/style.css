@@ -1,6 +1,8 @@
 /* general styling
 ------------------*/
-
+* {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: 'Oxygen', sans-serif;
@@ -102,7 +104,7 @@ nav li {
 	color: grey;
 	display: block;
 	text-align: center;
-	width: 80px;
+	width: 100px;
 	cursor: pointer;
 	transition: 0.7s;
 }
@@ -144,12 +146,14 @@ body > header > div > nav > ul > li:nth-child(1) {
 }
 
 .mainSectionContent {
-	width: 590px;
+	width: 650px;
 	float: left;
 	padding: 30px;
 	margin-right: 40px;
 	background: #ffffff;
 	margin-bottom: 30px;
+	box-sizing: border-box;
+	overflow: auto;
 }
 
 .inlineImage {
@@ -163,7 +167,7 @@ body > header > div > nav > ul > li:nth-child(1) {
 }
 
 .sidebar {
-	width: 210px;
+	width: 270px;
 	float: left;
 	padding: 30px;
 	background: #ffffff;
@@ -273,7 +277,7 @@ textarea:focus {
 }
 
 .contactFormButton {
-	width: 341px;
+	width: 318px;
 	height: 50px;
 	border: 2px rgba(0,0,0,0.1) solid;
 	color: #666666;
@@ -339,7 +343,6 @@ textarea:focus {
  ------------------------- */
  @media screen and (max-width: 980px) {
  	.mainSectionContent, .sidebar {
- 		box-sizing: border-box;
  		width: 90%;
  		float: none;
  		margin: 0 auto;
@@ -361,8 +364,16 @@ textarea:focus {
  		height: 60px;
  		width: 60px;
  	}
-
-
+ 	div.portfolio {
+ 		float: left;
+ 	}
+ 	div.imageWrapper {
+ 		width: 48%;
+ 		margin: 1%;
+ 	}
+ 	.imageWrapper img {
+ 		width: 100%;
+ 	}
 
  }
 
@@ -406,5 +417,30 @@ textarea:focus {
  		margin: 0 auto;
  		border-radius: 0;
  		margin-top: 20px;
+ 	}
+ 	.contactForm input, .contactForm input:focus, textarea, textarea:focus {
+		width: 100%;
+ 	}
+ 	.imageWrapper {
+ 		display: block;
+ 	}
+
+ 	div.imageWrapper {
+ 		width: 100%;
+ 		margin: 0;
+ 		margin-top: 5%; 
+ 	}
+ 	form.contactForm {
+ 		margin: 0;
+	}
+
+	.contactForm input {
+		margin-bottom: 3%;
+		margin-top: 3%;
+
+	}
+
+ 	.contactFormButton {
+ 		width: 100%;
  	}
  }
