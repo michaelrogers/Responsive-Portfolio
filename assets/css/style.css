@@ -403,6 +403,7 @@ textarea:focus {
 
  	nav li {
  		padding: 20px 10px;
+ 		width: 33.33%;
  	}
 
  	.wrapper {
@@ -443,4 +444,5 @@ textarea:focus {
  	.contactFormButton {
  		width: 100%;
  	}
+
  }
